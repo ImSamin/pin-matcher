@@ -3,7 +3,7 @@ document.querySelector('.notify-section').style.display = 'none';
 
 //Generate Pin
 document.querySelector('.generate-btn').addEventListener('click' , function() {
-    var pinn = Math.floor(Math.random() * 9999) ;
+    var pinn = Math.floor(Math.random() * 9999) + 1000 ;
     document.querySelector('.generatedValue').value = pinn;
     document.querySelector('.generatedValue').style.textAlign = 'center';
 });
